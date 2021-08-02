@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting visualizer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ 
+<header>
+
+    <p class="main_head">Sorting visualizer</p>
+
+</header> 
+
+
+     <nav>
+          
+        <div class="array-inputs">
+         <p>Size of the array : </p>
+         <input type="range" name="" id="a_size" min="20" max="150" step="1" value="80">
+         <p>Speed of the algorithm : </p>
+         <input type="range" name="" id="a_speed" min="1" max="5" step="1" value="3">
+         <button id="a_generate">Generate New Array!</button>
+
+        </div>
+ 
+           
+         <div class="algos">
+         
+          
+          <select name="algo" id="algo" class="algo">
+           <option value="Bubble">Bubble</option>
+           <option value="Selection">Selection</option>
+           <option value="Insertion">Insertion</option>
+           <option value="Merge">Merge</option>
+           <option value="Quick">Quick</option>
+          </select>
+          <button class="btn" id="btn">Sort</button>
+          
+           
+  
+
+         </div>
+
+     
+
+
+
+     </nav>
+
+
+ 
+
+
+ <section>
+
+   <div id="Info_Cont1">
+
+   </div>
+
+   <div id="array_container"></div>
+
+   <div id="Info_Cont2">
+
+   </div>
+
+
+ </section>
+
+ <footer>
+ <div class="social">  
+ <a href="https://www.linkedin.com/in/kapil-makhija-0314451a6"><i class="fa fa-linkedin-square"></i></a> 
+ <a href="https://github.com/kapilmak3828"> <i class="fa fa-github"></i></a>
+  
+  </div>
+
+
+ </footer>
+ 
+ 
+ <script src="main.js"></script>
+ <script src="visualizations.js"></script>
+<script src="bubble_sort.js"></script>
+<script src="Selection_sort.js"></script>
+<script src="insertion_sort.js"></script>
+<script src="merge.js"></script>
+<script src="quick.js"></script>
+
+</body>
+</html>
